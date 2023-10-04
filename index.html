@@ -109,19 +109,7 @@
   var opstanya = '';
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
-    
-   async function menuju() {
-    const nomorTujuan = '6285701854470'; // Ganti dengan nomor WhatsApp tujuan Anda
-    const pesan = 'Makasii udah ngucapin ultah ><'; // Ganti dengan pesan yang ingin Anda kirim
-
-    const url = `https://api.whatsapp.com/send?phone=${nomorTujuan}&text=${encodeURIComponent(pesan)}`;
-
-    // Buka URL WhatsApp dengan pesan
-    window.open(url);
-
-    // Atau, Anda juga dapat menggunakan window.location untuk membuka tab baru
-    // window.location.href = url;
-}
+   async function menuju(){pesanwhatsapp = "Makasii udah ngucapin ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
 </script>
 <script src="script.js"></script>
 <!-- Sampai Sini -->
