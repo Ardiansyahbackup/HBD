@@ -40,7 +40,7 @@
      <div id="kadoIn">
        <!-- Tombol Surat --><img src="img/foto.jpeg"/>
      </div>
-     <p id="ket">Klik Fotonya!</p>
+     <p id="ket">Klik Fotonya:v</p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
@@ -54,7 +54,7 @@
          <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker6"/>
      </div>
      
-     <p id="halo" class="halo"></p>
+     <p id="halo" class="Alooo"></p>
      
      <div><blockquote id='bq' data-text='㋡'>
        <p id="kalimat">Maapin isi content nya 🤣</p>
@@ -76,7 +76,7 @@
        <p id="pesan7" class="gaya2">Sehat Selalu ya biar kalo ke mundu ada yang bisa diajak main 🤣</p>
 
        <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesial ini budok dapat menjadi pribadi yang lebih baik yaa.. 🥳</p>
+       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesial ini Adell dapat menjadi pribadi yang lebih baik yaa.. 🥳</p>
        <p id="pesan10" class="gaya2">Dijaga pola tidurnya hwhwhw</p>
 
        <!-- Tombol Lanjut -->
@@ -106,7 +106,7 @@
     var nama = "Budok"
        if(nama && nama.length < 11){
          window.nama = nama;
-         vketikhalo="Hai, " + nama + " ✨";
+         vketikhalo="Aloo, " + nama + " ✨";
          mulainama();
          } else {
            await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
@@ -119,7 +119,21 @@
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
     
-    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=+6285701854470" + pesanwhatsapp;}
+   async function kirimPesanWhatsApp() {
+    const nomorTujuan = '6285701854470'; // Ganti dengan nomor WhatsApp tujuan Anda
+    const pesan = 'Makasii udah ngucapin ultah ><'; // Ganti dengan pesan yang ingin Anda kirim
+
+    const url = `https://api.whatsapp.com/send?phone=${nomorTujuan}&text=${encodeURIComponent(pesan)}`;
+
+    // Buka URL WhatsApp dengan pesan
+    window.open(url);
+
+    // Atau, Anda juga dapat menggunakan window.location untuk membuka tab baru
+    // window.location.href = url;
+}
+
+// Panggil fungsi untuk mengirim pesan WhatsApp
+//kirimPesanWhatsApp();
 </script>
 <script src="script.js"></script>
 <!-- Sampai Sini -->
